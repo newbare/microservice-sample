@@ -9,6 +9,8 @@ This will start three containers [1] Redis Server, [2] Microservice, [3] Gateway
 
 Following comands can be used to test the sample
 
+**192.168.99.100** ip has to be changed based on your **docker VM ip**
+
 ```
 Get issued tickets
 
