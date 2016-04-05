@@ -30,3 +30,23 @@ curl -v http://192.168.99.100:9090/orlando/tickets
 {}%
 
 ```
+Add new tickets
+
+curl -v -X POST http://192.168.99.100:9090/orlando/ticket/TKT0001
+
+*   Trying 192.168.99.100...
+* Connected to 192.168.99.100 (192.168.99.100) port 9090 (#0)
+> POST /orlando/ticket/TKT0001 HTTP/1.1
+> Host: 192.168.99.100:9090
+> User-Agent: curl/7.43.0
+> Accept: */*
+>
+< HTTP/1.1 201 Created
+< Connection: keep-alive
+< Content-Length: 7
+< Content-Type: */*
+<
+* Connection #0 to host 192.168.99.100 left intact
+TKT0001%
+
+```
