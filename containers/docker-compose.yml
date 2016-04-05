@@ -1,0 +1,31 @@
+version: '2'
+services:
+  redisstore:
+    container_name: redisstore
+    build:
+      context: .
+      dockerfile: redis/Dockerfile
+    ports:
+    - "6379:6379"
+    networks:
+    - msa-net
+  ms:
+    container_name: ms
+    build:
+      context: ../
+      dockerfile: containers/ms/Dockerfile
+    ports:
+    - "8080:8080"
+    networks:
+    - msa-net
+  gateway:
+    container_name: gateway
+    build:
+      context: ../
+      dockerfile: containers/gateway/Dockerfile
+    ports:
+    - "9090:9090"
+    networks:
+    - msa-net
+networks:
+  msa-net:
