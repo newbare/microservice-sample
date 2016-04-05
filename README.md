@@ -30,6 +30,8 @@ curl -v http://192.168.99.100:9090/orlando/tickets
 {"TKT0010":"VALID","TKT0002":"VALID","TKT0001":"VALID","TKT0008":"VALID","TKT0007":"VALID","TKT0009":"VALID","TKT0004":"VALID","TKT0003":"VALID","TKT0006":"VALID","TKT0005":"VALID"}%
 
 ```
+
+```
 Add new tickets
 
 curl -v -X POST http://192.168.99.100:9090/orlando/ticket/TKT0001
