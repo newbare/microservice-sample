@@ -5,7 +5,7 @@ To deploy the sample follow the below steps
 1. navigate to /containers
 2. run ``` docker-compose up -d ```
 
-This will start three containers [1] Redis Server, [2] Microservice, [3] Gateway
+This will start file containers [1] Redis Server, [2] Microservices (add/validate/list), [3] Gateway
 
 Following comands can be used to test the sample
 
