@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package com.nuwanbando.ms.ticketing;
+package com.orlando.ms.validate;
 
 import org.wso2.msf4j.MicroservicesRunner;
 
@@ -26,7 +26,7 @@ import org.wso2.msf4j.MicroservicesRunner;
 public class Application {
     public static void main(String[] args) {
         new MicroservicesRunner()
-                .deploy(new TicketingService())
+                .deploy(new ValidateService())
                 .start();
     }
 }

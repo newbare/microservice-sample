@@ -1,4 +1,4 @@
-package com.nuwanbando.ms.ticketing;
+package com.orlando.ms.validate;
 
 import redis.clients.jedis.Jedis;
 import redis.clients.jedis.exceptions.JedisConnectionException;
@@ -19,7 +19,7 @@ public class TicketingUtil {
         try {
             return jedis;
         } catch (JedisConnectionException e) {
-        	e.printStackTrace();
+        	log.error(e.getMessage());
         }
         return null;
     }

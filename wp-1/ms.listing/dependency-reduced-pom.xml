@@ -4,15 +4,14 @@
     <artifactId>msf4j-service</artifactId>
     <groupId>org.wso2.msf4j</groupId>
     <version>1.0.0</version>
-    <relativePath>../pom.xml/pom.xml</relativePath>
   </parent>
   <modelVersion>4.0.0</modelVersion>
-  <groupId>com.nuwanbando.ms</groupId>
-  <artifactId>com.nuwanbando.ms.ticketing</artifactId>
+  <groupId>com.orlando.ms</groupId>
+  <artifactId>ms.listing</artifactId>
   <name>WSO2 MSF4J Microservice</name>
   <version>1.0.0</version>
   <properties>
-    <microservice.mainClass>com.nuwanbando.ms.ticketing.Application</microservice.mainClass>
+    <microservice.mainClass>com.orlando.ms.listing.Application</microservice.mainClass>
   </properties>
 </project>
 

@@ -48,24 +48,24 @@ classpath:org/wso2/carbon/gateway/xml/camel-spring.xsd">
         <!-- sample routes corresponding to the rest interfaces -->
         <route>
             <from uri="direct:getTickets"/>
-            <to uri="wso2-gw:http://ms:8080/ticketingService/tickets"/>
+            <to uri="wso2-gw:http://list:8080/ticketing/tickets"/>
         </route>
         <route>
             <from uri="direct:addTicket"/>
             <recipientList>
-              <simple>wso2-gw:http://ms:8080/ticketingService/ticket/${header.number}</simple>
+              <simple>wso2-gw:http://addrm:8080/ticketing/ticket/${header.number}</simple>
            </recipientList>
         </route>
         <route>
             <from uri="direct:validate"/>
             <recipientList>
-              <simple>wso2-gw:http://ms:8080/ticketingService/validate/${header.number}</simple>
+              <simple>wso2-gw:http://validate:8080/ticketing/validate/${header.number}</simple>
            </recipientList>
         </route>
         <route>
             <from uri="direct:rmTicket"/>
             <recipientList>
-              <simple>wso2-gw:http://ms:8080/ticketingService/ticket/${header.number}</simple>
+              <simple>wso2-gw:http://addrm:8080/ticketing/ticket/${header.number}</simple>
            </recipientList>
         </route>
 
